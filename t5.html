@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document oriented</title>
+  <link rel="stylesheet" href="k.css">
+</head>
+<body>
+  <div align="center">
+    <p>silahkan melakukan login terlebih dahulu</p>
+    <button onclick="tampilModal()" style="width:auto;">Login</button>
+  </div>
+
+  <div id="Modal" class="modal">
+    <form class="modal-content" method="post">
+      <div class="container">
+        <span onclick="tutupModal()" class="close" title="close modal"></span>
+        <label for="uname"><b>Username :</b></label> <br>
+        <input type="text" name="username" id="username"> <br>
+
+        <label for="psw"><b>Password :</b></label> <br>
+        <input type="password" name="password" id="password"> <br>
+
+        <input type="button" value="Login" id="submit" onclick="validate()">
+      </div>
+
+      <div class="container" style="background-color: grey;">
+      <br><b>Username : user <br> Password : 123</b>
+
+      </div>
+
+    </form>
+
+  </div>
+  <script src="k.js"></script>
+</body>
+</html>
